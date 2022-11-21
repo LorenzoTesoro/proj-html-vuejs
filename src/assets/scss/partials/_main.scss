@@ -2,10 +2,11 @@
 
 main {
   .jumbotron {
-    background-image: url("/images/driving_preview.jpg");
+    background-image: url("/images/homepage-hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    background-position: center;
+    height: 600px;
 
     .container {
       height: 100%;
@@ -25,7 +26,9 @@ main {
       aspect-ratio: 1;
       background-color: $lighter;
       color: $primary;
-
+      .calendar {
+        color: $dark_hash;
+      }
       &.cost {
         position: absolute;
         right: -150px;
@@ -47,4 +50,56 @@ main {
       }
     }
   }
+  .book_lesson {
+    p {
+      color: $dark_hash;
+      filter: brightness(200%);
+      line-height: 1.8;
+    }
+    .title {
+      h2 {
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+        color: $dark_hash;
+      }
+      p:first-of-type {
+        font-size: $fs-md;
+      }
+      p:last-of-type {
+        font-size: $fs-sm;
+      }
+    }
+    .contact_us {
+      .card {
+        padding: 2.5rem;
+        box-shadow: 2px 25px 15px -2px $light_hash;
+        margin-top: -2rem;
+
+        h3 {
+          color: $primary;
+          padding-bottom: 1rem;
+        }
+        p {
+          font-size: $fs-md;
+        }
+        input {
+          margin-bottom: 1.7rem;
+          padding: 0.8rem;
+          background-color: $light_hash;
+          opacity: 0.6;
+          border-radius: 0.5rem;
+          border: 0.1rem solid $light_hash;
+        }
+        button {
+          background: $primary;
+          padding: 0;
+          color: $lighter;
+          font-size: $fs-md;
+          font-weight: 700;
+          padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        }
+      }
+    }
+  }
 }
+/* /.jumbotron */

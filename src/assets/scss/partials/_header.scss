@@ -7,10 +7,13 @@ header {
 
   .header_top {
     background-color: $dark_hash;
-    color: $light_hash;
     padding: 0.5rem 0.3rem 0.5rem 0;
     font-size: $fs-xs;
 
+    .col {
+      color: $dark_hash;
+      filter: brightness(230%);
+    }
     svg {
       transform: rotate(270deg);
     }
@@ -27,6 +30,7 @@ header {
       padding-inline: 1.3rem;
       font-size: $fs-sm;
       font-weight: 700;
+      filter: saturate(2);
     }
   }
 }
