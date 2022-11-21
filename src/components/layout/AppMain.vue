@@ -5,5 +5,12 @@ export default {
 </script>
 
 <template>
-  <div>Main</div>
+  <main>
+    <section class="jumbotron">
+      <div class="container d-flex">
+        <h1>Drive with Avada</h1>
+        <p>We offer the finest driving tuition money can buy</p>
+      </div>
+    </section>
+  </main>
 </template>

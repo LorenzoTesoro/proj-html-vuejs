@@ -1,0 +1,21 @@
+@use "./variables.scss" as *;
+
+main {
+  .jumbotron {
+    background-image: url("/images/driving_preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+    .container {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      color: $lighter;
+    }
+
+    .p {
+      font-size: $fs-md;
+    }
+  }
+}

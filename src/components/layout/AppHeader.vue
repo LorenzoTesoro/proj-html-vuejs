@@ -9,6 +9,8 @@ export default {
 };
 </script>
 
+<!-- TODO: POPOLA DINAMICAMENTE LA LISTA DEI LINK -->
+
 <template>
   <header>
     <div class="header_top">
@@ -44,18 +46,8 @@ export default {
     <div class="header_bottom">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <div class="logo">
-              <img
-                src="../../assets/images/avada-drivers-logo-2x-400x77.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col">
-            <NavBar />
-            <!-- ./navbar -->
-          </div>
+          <NavBar />
+          <!-- ./navbar -->
         </div>
       </div>
     </div>
