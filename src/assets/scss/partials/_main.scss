@@ -13,9 +13,38 @@ main {
       justify-content: center;
       color: $lighter;
     }
-
     .p {
       font-size: $fs-md;
+    }
+    .square {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      aspect-ratio: 1;
+      background-color: $lighter;
+      color: $primary;
+
+      &.cost {
+        position: absolute;
+        right: -150px;
+        top: 170px;
+        box-shadow: 2px 2px 10px 2px $dark_hash;
+      }
+      &.demos {
+        position: absolute;
+        right: -150px;
+        top: 110px;
+        box-shadow: 2px 2px 10px 2px $dark_hash;
+      }
+      .price {
+        font-weight: 900;
+      }
+      .on_sale {
+        font-size: $fs-xs;
+        color: $darker;
+      }
     }
   }
 }
