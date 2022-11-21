@@ -1,2 +1,7 @@
 @use "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @use "./partials/variables.scss";
+@use "./partials/header.scss";
+
+img {
+  max-width: 100%;
+}

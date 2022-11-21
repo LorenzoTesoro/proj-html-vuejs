@@ -1,0 +1,33 @@
+@use "./variables.scss" as *;
+
+header {
+  .header_top {
+    background-color: $dark_hash;
+    color: $light_hash;
+    padding: 0.5rem 0.3rem 0.5rem 0;
+    font-size: $fs-xs;
+
+    svg {
+      transform: rotate(270deg);
+    }
+  }
+
+  .header_bottom {
+    background-color: $primary_dark_shade;
+    color: $lighter;
+    opacity: 0.5;
+    font-size: $fs-sm;
+    font-weight: 700;
+    padding: 1rem 0 1rem 0;
+    img {
+      width: 300px;
+    }
+
+    button {
+      background-color: $primary_light;
+      padding-inline: 1.3rem;
+      font-size: $fs-sm;
+      font-weight: 700;
+    }
+  }
+}
