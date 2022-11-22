@@ -3,10 +3,13 @@
 @use "./partials/header.scss";
 @use "./partials/main.scss";
 
+/* common rules */
 img {
   max-width: 100%;
 }
-
+a {
+  text-decoration: none;
+}
 /* colors */
 h2,
 h3,

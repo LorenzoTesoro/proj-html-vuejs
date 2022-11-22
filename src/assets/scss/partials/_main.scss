@@ -117,6 +117,9 @@ main {
     color: $lighter;
     padding: 3rem 1.5rem 3rem 0;
 
+    h2 {
+      color: $lighter;
+    }
     .col:last-of-type {
       align-self: center;
       text-align: right;
@@ -139,9 +142,7 @@ main {
       margin-top: -2rem;
       width: 70%;
       position: relative;
-      h1 {
-        color: $dark_hash;
-      }
+
       p {
         color: $dark_hash;
         filter: brightness(200%);
@@ -347,4 +348,5 @@ main {
       }
     }
   }
+  /* /.newsletter */
 }

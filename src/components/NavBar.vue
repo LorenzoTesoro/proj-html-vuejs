@@ -1,6 +1,17 @@
 <script>
+import ButtonItem from "./utilities/ButtonItem.vue";
+import nav_items from "../assets/data/nav_items.js";
+
 export default {
   name: "NavBar",
+  data() {
+    return {
+      nav_items,
+    };
+  },
+  components: {
+    ButtonItem,
+  },
 };
 </script>
 
@@ -10,30 +21,12 @@ export default {
     <nav class="navbar navbar-expand-sm">
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-          <li class="nav-item text-uppercase mx-3">
-            <a class="nav-link text-light active" href="#" aria-current="page"
-              >Home <span class="visually-hidden">(current)</span></a
-            >
+          <li class="nav-item text-uppercase mx-5" v-for="link in nav_items">
+            <a href="">{{ link.name }}</a>
           </li>
-          <li class="nav-item text-uppercase mx-3">
-            <a class="nav-link text-light" href="#">Prices</a>
-          </li>
-          <li class="nav-item text-uppercase mx-3">
-            <a class="nav-link text-light" href="#">Courses</a>
-          </li>
-          <li class="nav-item text-uppercase mx-3">
-            <a class="nav-link text-light" href="#">Locations</a>
-          </li>
-          <li class="nav-item text-uppercase mx-3">
-            <a class="nav-link text-light" href="#">Blog</a>
-          </li>
+          <div class="corner rounded text-uppercase px-2">new</div>
         </ul>
-        <button
-          class="btn rounded-pill text-uppercase text-light ms-4"
-          type="submit"
-        >
-          Book Now
-        </button>
+        <ButtonItem class="ms-4">book now</ButtonItem>
       </div>
     </nav>
   </div>

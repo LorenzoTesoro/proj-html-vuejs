@@ -25,9 +25,25 @@ header {
     font-size: $fs-sm;
     font-weight: 700;
     padding: 1.5rem 0 1.5rem 0;
-
+    a {
+      color: $lighter;
+      &:hover {
+        color: $primary;
+        box-shadow: 0 3px $primary;
+        padding-bottom: 0.5rem;
+      }
+    }
+    ul {
+      position: relative;
+    }
+    .corner {
+      background-color: $primary;
+      color: $lighter;
+      position: absolute;
+      right: 285px;
+    }
     button {
-      background-color: $primary_light;
+      background-color: $primary;
       padding-inline: 1.3rem;
       font-size: $fs-sm;
       font-weight: 700;
