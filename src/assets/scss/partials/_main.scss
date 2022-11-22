@@ -236,4 +236,46 @@ main {
     }
   }
   /* /.instructors */
+  .testimonials {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url("/images/testimonial-background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    p {
+      color: $dark_hash;
+      filter: brightness(200%);
+      line-height: 1.8;
+    }
+
+    img {
+      width: 100px;
+    }
+    h5 {
+      filter: brightness(200%);
+    }
+    .testimonial_review {
+      width: 50%;
+
+      .container {
+        display: flex;
+        gap: 1rem;
+        width: 25%;
+      }
+      .circle {
+        width: 15px;
+        border-radius: 100%;
+        aspect-ratio: 1;
+        border: 1px solid $dark_hash;
+        filter: brightness(200%);
+      }
+
+      .circle.active {
+        background-color: $dark_hash;
+        filter: brightness(200%);
+      }
+    }
+  }
+  /* /.testimonials */
 }

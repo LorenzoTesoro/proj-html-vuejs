@@ -5,9 +5,7 @@ import CtaSection from "../main_sections/CtaSection.vue";
 import CoursesSection from "../main_sections/CoursesSection.vue";
 import StatsSection from "../main_sections/StatsSection.vue";
 import InstructorsSection from "../main_sections/InstructorsSection.vue";
-
-import CardItem from "../utilities/CardItem.vue";
-import ButtonItem from "../utilities/ButtonItem.vue";
+import TestimonialsSection from "../main_sections/TestimonialsSection.vue";
 
 export default {
   name: "AppMain",
@@ -18,8 +16,7 @@ export default {
     CoursesSection,
     StatsSection,
     InstructorsSection,
-    CardItem,
-    ButtonItem,
+    TestimonialsSection,
   },
 };
 </script>
@@ -35,5 +32,6 @@ export default {
     <CoursesSection />
     <StatsSection />
     <InstructorsSection />
+    <TestimonialsSection />
   </main>
 </template>
