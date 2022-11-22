@@ -51,6 +51,7 @@ main {
     }
   }
   .book_lesson {
+    margin-bottom: 2rem;
     p {
       color: $dark_hash;
       filter: brightness(200%);
@@ -92,12 +93,81 @@ main {
         }
         button {
           background: $primary;
-          padding: 0;
+          filter: saturate(1.5);
           color: $lighter;
           font-size: $fs-md;
           font-weight: 700;
           padding: 0.5rem 1.5rem 0.5rem 1.5rem;
         }
+        svg {
+          position: absolute;
+          right: 50px;
+          top: 200px;
+        }
+      }
+    }
+  }
+  .cta {
+    background-image: url(/images/horizontal-cta-background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $lighter;
+    padding: 3rem 1.5rem 3rem 0;
+
+    .col:last-of-type {
+      align-self: center;
+      text-align: right;
+      font-size: 1.5rem;
+      svg {
+        transform: rotate(270deg);
+        margin-right: 1rem;
+      }
+    }
+  }
+  .courses {
+    background-image: url("/images/promise-background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+
+    .card {
+      width: 70%;
+      position: relative;
+      h1 {
+        color: $dark_hash;
+      }
+      p {
+        color: $dark_hash;
+        filter: brightness(200%);
+        line-height: 1.8;
+      }
+      button {
+        filter: saturate(1.5);
+      }
+      .corner {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    .col:last-of-type {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      color: $secondary;
+
+      img {
+        width: 200px;
+        aspect-ratio: 1;
+      }
+
+      button {
+        border: 3px solid $secondary;
+        color: $secondary;
+        background: none;
+        padding: 0.5rem 1rem;
       }
     }
   }
