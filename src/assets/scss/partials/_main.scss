@@ -91,6 +91,7 @@ main {
           opacity: 0.6;
           border-radius: 0.5rem;
           border: 0.1rem solid $light_hash;
+          outline-style: none;
         }
         button {
           background: $primary;
@@ -323,4 +324,27 @@ main {
     }
   }
   /* /.news */
+  .newsletter {
+    background-image: url("/images/newsletter_background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0 2rem 0;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      filter: saturate(1.5);
+
+      input {
+        border: 0.1px solid $light_hash;
+        outline-style: none;
+      }
+      p {
+        color: $dark_hash;
+        filter: brightness(200%);
+        font-size: $fs-sm;
+      }
+    }
+  }
 }
