@@ -18,7 +18,7 @@ export default {
         <div class="col">
           <CardItem>
             <img class="corner" src="/images/new-corner.jpg" alt="" />
-            <h1 class="pb-5">Courses</h1>
+            <h2 class="pb-5">Courses</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
               unde laboriosam alias distinctio expedita. Quia necessitatibus

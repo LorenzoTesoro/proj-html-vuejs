@@ -1,8 +1,15 @@
 @use "../../../node_modules/bootstrap/scss/bootstrap.scss";
-@use "./partials/variables.scss";
+@use "./partials/variables.scss" as *;
 @use "./partials/header.scss";
 @use "./partials/main.scss";
 
 img {
   max-width: 100%;
+}
+
+/* colors */
+h2,
+h3,
+h5 {
+  color: $dark_hash;
 }

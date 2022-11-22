@@ -209,4 +209,31 @@ main {
       }
     }
   }
+  /* /.statistics */
+  .instructors {
+    p {
+      color: $dark_hash;
+      filter: brightness(200%);
+      line-height: 1.8;
+    }
+    .card {
+      border-top: 3px solid $primary;
+      h5 {
+        padding-top: 0.5rem;
+      }
+    }
+    .row:first-of-type {
+      .col:last-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5rem;
+
+        button {
+          filter: saturate(1.5);
+        }
+      }
+    }
+  }
+  /* /.instructors */
 }

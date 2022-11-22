@@ -15,6 +15,7 @@ export default {
 .card {
   padding: 2rem 1.5rem 2rem 1.5rem;
   text-align: center;
-  box-shadow: 2px 25px 15px -2px $light_hash;
+  box-shadow: 2px 5px 10px 8px $light_hash;
+  border: none;
 }
 </style>
