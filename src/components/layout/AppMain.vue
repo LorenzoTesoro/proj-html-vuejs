@@ -6,6 +6,7 @@ import CoursesSection from "../main_sections/CoursesSection.vue";
 import StatsSection from "../main_sections/StatsSection.vue";
 import InstructorsSection from "../main_sections/InstructorsSection.vue";
 import TestimonialsSection from "../main_sections/TestimonialsSection.vue";
+import NewsSection from "../main_sections/NewsSection.vue";
 
 export default {
   name: "AppMain",
@@ -17,12 +18,14 @@ export default {
     StatsSection,
     InstructorsSection,
     TestimonialsSection,
+    NewsSection,
   },
 };
 </script>
 
 <!-- TODO: RESOLVE HOVER EFFECTS ON BUTTONS -->
-<!-- INSTALL FONTAWESOME AND GENERATE ICONS -->
+<!-- TODO: INSTALL FONTAWESOME AND GENERATE ICONS -->
+<!-- TODO: FIX NEGATIVE MARGINS WITH P-RELATIVE -->
 
 <template>
   <main>
@@ -33,5 +36,6 @@ export default {
     <StatsSection />
     <InstructorsSection />
     <TestimonialsSection />
+    <NewsSection />
   </main>
 </template>

@@ -238,7 +238,7 @@ main {
   /* /.instructors */
   .testimonials {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
     background-image: url("/images/testimonial-background.jpg");
     background-size: cover;
     background-position: center;
@@ -278,4 +278,49 @@ main {
     }
   }
   /* /.testimonials */
+  .news {
+    background-image: url("/images/latestnews-background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1rem;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      border-top: 5px solid $secondary;
+      position: relative;
+      top: -1.5rem;
+      box-shadow: 0px 16px 23px 7px $primary_dark;
+      padding-bottom: 0.5;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .triangle {
+      position: relative;
+      z-index: 1;
+      top: -1.5rem;
+    }
+    h5,
+    button {
+      color: $primary;
+      filter: saturate(1.5);
+    }
+    p,
+    .caption {
+      color: $dark_hash;
+      filter: brightness(200%);
+      line-height: 1.8;
+    }
+    .comments {
+      color: $primary;
+      filter: brightness(50%);
+    }
+    .caption {
+      font-size: $fs-sm;
+    }
+  }
+  /* /.news */
 }
