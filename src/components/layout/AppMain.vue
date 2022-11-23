@@ -25,11 +25,6 @@ export default {
 };
 </script>
 
-<!-- TODO: RESOLVE HOVER EFFECTS ON BUTTONS -->
-<!-- TODO: INSTALL FONTAWESOME AND GENERATE ICONS -->
-<!-- TODO: FIX NEGATIVE MARGINS WITH P-RELATIVE -->
-<!-- TODO: INPUT COLOR WHEN IT IS ACTIVE -->
-
 <template>
   <main>
     <HeroSection />

@@ -4,7 +4,13 @@
 @use "./partials/main.scss";
 @use "./partials/footer.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
 /* common rules */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -14,6 +20,9 @@ a {
 ul {
   list-style: none;
 }
+.phone {
+  transform: rotate(270deg);
+}
 /* colors */
 h2,
 h3,
@@ -22,10 +31,14 @@ h5 {
 }
 
 /* hover effects */
-button:not(.courses_features button):hover {
-  filter: saturate(2);
-}
 
+header {
+  a:hover {
+    color: $primary;
+    box-shadow: 0 3px $primary;
+    padding-bottom: 0.5rem;
+  }
+}
 main {
   .courses {
     .courses_features {
@@ -44,4 +57,8 @@ main {
       transition: ease-in-out 0.3s;
     }
   }
+}
+
+button:not(.courses_features button):hover {
+  filter: saturate(2);
 }

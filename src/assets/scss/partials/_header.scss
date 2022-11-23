@@ -15,38 +15,30 @@ header {
       color: $dark_hash;
       filter: brightness(230%);
     }
-    svg {
-      transform: rotate(270deg);
-    }
   }
 
   .header_bottom {
     background-color: rgba($dark_hash, 0.5);
-    font-size: $fs-sm;
+    font-size: $fs-md;
     font-weight: 700;
     padding: 1.5rem 0 1.5rem 0;
     a {
       color: $lighter;
-      &:hover {
-        color: $primary;
-        box-shadow: 0 3px $primary;
-        padding-bottom: 0.5rem;
-      }
     }
     ul {
       position: relative;
+      display: flex;
+      li {
+        padding-inline: 2.6rem;
+      }
     }
     .corner {
       background-color: $primary;
       color: $lighter;
       position: absolute;
-      right: 285px;
-    }
-    button {
-      background-color: $primary;
-      padding-inline: 1.3rem;
-      font-size: $fs-sm;
-      font-weight: 700;
+      top: 2px;
+      right: 273px;
+      font-size: $fs-xs;
     }
   }
 }
