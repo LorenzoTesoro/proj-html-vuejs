@@ -9,6 +9,7 @@ import {
   faEnvelope,
   faLink,
   faCircleArrowRight,
+  faSquareCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -27,7 +28,8 @@ library.add(
   faPhone,
   faEnvelope,
   faLink,
-  faCircleArrowRight
+  faCircleArrowRight,
+  faSquareCheck
 );
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

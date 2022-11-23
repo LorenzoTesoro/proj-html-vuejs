@@ -8,7 +8,6 @@ export default {
 };
 </script>
 
-<!-- TODO: ADD ICON TO NAME INPUT -->
 <template>
   <section class="book_lesson pb-3">
     <div class="container">

@@ -1,9 +1,15 @@
 <script>
 import CardItem from "../utilities/CardItem.vue";
 import ButtonItem from "../utilities/ButtonItem.vue";
+import courses from "../../assets/data/courses";
 
 export default {
   name: "CoursesSection",
+  data() {
+    return {
+      courses,
+    };
+  },
   components: {
     CardItem,
     ButtonItem,
@@ -32,23 +38,9 @@ export default {
         </div>
         <!-- /.col -->
         <div class="col courses_features">
-          <div>
-            <img class="mb-3" src="/images/courses-passplus.jpg" alt="" />
-            <h5 class="text-center mb-3">Pass Plus</h5>
-            <div class="text-center">
-              <ButtonItem>Learn More</ButtonItem>
-            </div>
-          </div>
-          <div>
-            <img class="mb-3" src="/images/course-intensive.jpg" alt="" />
-            <h5 class="text-center mb-3">Intensive Course</h5>
-            <div class="text-center">
-              <ButtonItem>Learn More</ButtonItem>
-            </div>
-          </div>
-          <div>
-            <img class="mb-3" src="/images/courses-instructor.jpg" alt="" />
-            <h5 class="text-center mb-3">Instructors</h5>
+          <div v-for="course in courses">
+            <img class="mb-3" :src="`${course.image}`" alt="" />
+            <h5 class="text-center mb-3">{{ course.name }}</h5>
             <div class="text-center">
               <ButtonItem>Learn More</ButtonItem>
             </div>

@@ -1,8 +1,14 @@
 <script>
 import NavBar from "../utilities/NavBar.vue";
+import contacts_icons from "../../assets/data/contacts_icons.js";
 
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      contacts_icons,
+    };
+  },
   components: {
     NavBar,
   },
@@ -21,7 +27,7 @@ export default {
           <div class="col d-flex align-items-center justify-content-end">
             <font-awesome-icon icon="fa-solid fa-phone" class="phone" />
             <div class="ps-3">
-              Give us a call to book your tuition! 1-800-555-555
+              Give us a call to book your tuition! {{ contacts_icons[1].name }}
             </div>
           </div>
           <!-- top_right -->

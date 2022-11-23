@@ -49,6 +49,10 @@ export default {
                 <font-awesome-icon icon="fa-solid fa-circle-arrow-right" />
                 <a href="" class="ps-3">{{ course.name }}</a>
               </li>
+              <li>
+                <font-awesome-icon icon="fa-solid fa-circle-arrow-right" />
+                <a href="" class="ps-3">Automatic</a>
+              </li>
             </ul>
           </div>
           <!-- /.col -->

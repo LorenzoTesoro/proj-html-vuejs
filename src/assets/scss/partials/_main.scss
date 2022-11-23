@@ -3,9 +3,6 @@
 main {
   .jumbotron {
     background-image: url("/images/homepage-hero-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     height: 600px;
 
     .container {
@@ -25,24 +22,25 @@ main {
       width: 50px;
       aspect-ratio: 1;
       background-color: $lighter;
-      color: $primary;
-      .calendar {
-        color: $dark_hash;
-      }
+      z-index: 1000;
+      box-shadow: 5px 5px 18px 5px rgba($dark_hash, 0.54);
       &.cost {
         position: absolute;
         right: -150px;
         top: 170px;
-        box-shadow: 2px 2px 10px 2px $dark_hash;
+        color: $primary;
       }
       &.demos {
         position: absolute;
         right: -150px;
         top: 110px;
-        box-shadow: 2px 2px 10px 2px $dark_hash;
+        color: $dark_hash;
       }
       .price {
         font-weight: 900;
+        span {
+          font-size: 0.725rem;
+        }
       }
       .on_sale {
         font-size: $fs-xs;
@@ -53,11 +51,7 @@ main {
   /* /.jumbotron */
   .book_lesson {
     margin-bottom: 2rem;
-    p {
-      color: $dark_hash;
-      filter: brightness(200%);
-      line-height: 1.8;
-    }
+
     .title {
       h2 {
         padding-top: 5rem;
@@ -93,58 +87,36 @@ main {
           border: 0.1rem solid $light_hash;
           outline-style: none;
         }
-        button {
-          font-size: $fs-md;
-          font-weight: 700;
-          padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-        }
-        svg {
-          position: absolute;
-          right: 50px;
-          top: 200px;
-        }
       }
     }
   }
   /* /.book_lesson */
   .cta {
     background-image: url(/images/horizontal-cta-background.jpg);
-    background-size: cover;
-    background-position: center;
     color: $lighter;
     padding: 3rem 1.5rem 3rem 0;
 
-    h2 {
-      color: $lighter;
-    }
     .col:last-of-type {
       align-self: center;
       text-align: right;
       font-size: 1.5rem;
-      svg {
-        transform: rotate(270deg);
-        margin-right: 1rem;
-      }
     }
   }
   /* /.cta */
   .courses {
     background-image: url("/images/promise-background.jpg");
-    background-size: cover;
-    background-position: bottom;
     padding-top: 0.5rem;
     padding-bottom: 3rem;
 
+    h5 {
+      color: $secondary;
+    }
     .card {
-      margin-top: -2rem;
+      top: -2rem;
       width: 70%;
       position: relative;
+      box-shadow: 0px 15px 18px 7px rgba(63, 72, 67, 0.37);
 
-      p {
-        color: $dark_hash;
-        filter: brightness(200%);
-        line-height: 1.8;
-      }
       .corner {
         width: 50px;
         position: absolute;
@@ -168,7 +140,6 @@ main {
         border: 3px solid $secondary;
         color: $secondary;
         background: none;
-        padding: 0.5rem 1rem;
       }
     }
   }
@@ -236,11 +207,6 @@ main {
         padding-right: 0.8rem;
       }
     }
-    p {
-      color: $dark_hash;
-      filter: brightness(200%);
-      line-height: 1.8;
-    }
     .card {
       border-top: 3px solid $primary;
       position: relative;
@@ -261,23 +227,12 @@ main {
   }
   /* /.instructors */
   .testimonials {
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-bottom: 6rem;
     background-image: url("/images/testimonial-background.jpg");
-    background-size: cover;
-    background-position: center;
-
-    p {
-      color: $dark_hash;
-      filter: brightness(200%);
-      line-height: 1.8;
-    }
 
     img {
       width: 100px;
-    }
-    h5 {
-      filter: brightness(200%);
     }
     .testimonial_review {
       width: 50%;
@@ -304,8 +259,6 @@ main {
   /* /.testimonials */
   .news {
     background-image: url("/images/latestnews-background.jpg");
-    background-size: cover;
-    background-position: center;
     padding-bottom: 1rem;
 
     .container {
@@ -327,12 +280,9 @@ main {
       z-index: 1;
       top: -1.5rem;
     }
-    h5,
-    button {
+    h5 {
       color: $primary;
-      filter: saturate(1.5);
     }
-    p,
     .caption {
       color: $dark_hash;
       filter: brightness(200%);
@@ -349,16 +299,12 @@ main {
   /* /.news */
   .newsletter {
     background-image: url("/images/newsletter_background.jpg");
-    background-size: cover;
-    background-position: center;
     padding: 2rem 0 2rem 0;
 
     .container {
       display: flex;
       flex-direction: column;
       width: 50%;
-      filter: saturate(1.5);
-
       input {
         border: 0.1px solid $light_hash;
         outline-style: none;
