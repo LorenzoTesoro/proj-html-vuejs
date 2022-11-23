@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <button class="btn rounded-pill text-uppercase">
+  <button class="rounded-pill text-uppercase">
     <slot></slot>
   </button>
 </template>
@@ -17,6 +17,7 @@ button {
   font-weight: 700;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   background: $primary;
+  border: none;
   color: $lighter;
 }
 </style>

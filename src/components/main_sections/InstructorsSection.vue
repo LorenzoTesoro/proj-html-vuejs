@@ -2,12 +2,14 @@
 import CardItem from "../utilities/CardItem.vue";
 import ButtonItem from "../utilities/ButtonItem.vue";
 import socialIcons from "../../assets/data/social_icons.js";
+import instructors from "../../assets/data/instructors.js";
 
 export default {
   name: "InstructorsSection",
   data() {
     return {
       socialIcons,
+      instructors,
     };
   },
   components: {
@@ -38,15 +40,16 @@ export default {
       </div>
       <!-- /.row -->
       <div class="row">
-        <div class="col">
+        <div class="col" v-for="instructor in instructors">
           <CardItem>
-            <img
-              src="/images/instructor-mikehart.jpg"
-              class="card-img-top"
-              alt=""
-            />
+            <div class="details">
+              <img :src="`${instructor.image}`" class="card-img-top" alt="" />
+              <div class="instructor_name">
+                instructor-{{ instructor.name }}
+              </div>
+            </div>
             <div class="card-body">
-              <h5>Mike Hart</h5>
+              <h5>{{ instructor.name }}</h5>
               <ul class="d-flex">
                 <li v-for="icon in socialIcons">
                   <font-awesome-icon :icon="`${icon.icon}`" />
@@ -58,41 +61,6 @@ export default {
             </div>
           </CardItem>
         </div>
-        <!-- /.col -->
-        <div class="col">
-          <CardItem>
-            <img
-              src="/images/instructor-johnsmith.jpg"
-              class="card-img-top"
-              alt=""
-            />
-            <div class="card-body">
-              <h5>John Smith</h5>
-              <div>icone</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit.
-              </p>
-            </div>
-          </CardItem>
-        </div>
-        <!-- /.col -->
-        <div class="col">
-          <CardItem>
-            <img
-              src="/images/instructor-angelahart.jpg"
-              class="card-img-top"
-              alt=""
-            />
-            <div class="card-body">
-              <h5>Angela Hart</h5>
-              <div>icone</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit.
-              </p>
-            </div>
-          </CardItem>
-        </div>
-        <!-- /.col -->
       </div>
       <!-- /.row -->
     </div>

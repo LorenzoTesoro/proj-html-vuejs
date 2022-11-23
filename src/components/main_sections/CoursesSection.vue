@@ -31,7 +31,7 @@ export default {
           </CardItem>
         </div>
         <!-- /.col -->
-        <div class="col">
+        <div class="col courses_features">
           <div>
             <img class="mb-3" src="/images/courses-passplus.jpg" alt="" />
             <h5 class="text-center mb-3">Pass Plus</h5>

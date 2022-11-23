@@ -94,9 +94,6 @@ main {
           outline-style: none;
         }
         button {
-          background: $primary;
-          filter: saturate(1.5);
-          color: $lighter;
           font-size: $fs-md;
           font-weight: 700;
           padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -147,9 +144,6 @@ main {
         color: $dark_hash;
         filter: brightness(200%);
         line-height: 1.8;
-      }
-      button {
-        filter: saturate(1.5);
       }
       .corner {
         width: 50px;
@@ -213,6 +207,35 @@ main {
   }
   /* /.statistics */
   .instructors {
+    .details {
+      position: relative;
+    }
+    .instructor_name {
+      border: 1px solid black;
+      background-color: $lighter;
+      width: 35%;
+      font-size: $fs-sm;
+      position: absolute;
+      right: 0;
+      bottom: 30px;
+      display: none;
+    }
+    .col:nth-of-type(2) .card {
+      padding-bottom: 3rem;
+    }
+    ul {
+      justify-content: center;
+      padding-left: 0;
+      svg {
+        font-size: $fs-sm;
+        color: $dark_hash;
+        filter: brightness(200%);
+      }
+
+      li:not(li:last-of-type) {
+        padding-right: 0.8rem;
+      }
+    }
     p {
       color: $dark_hash;
       filter: brightness(200%);
@@ -220,6 +243,9 @@ main {
     }
     .card {
       border-top: 3px solid $primary;
+      position: relative;
+      bottom: -2rem;
+      box-shadow: 0px 15px 18px 7px rgba(63, 72, 67, 0.37);
       h5 {
         padding-top: 0.5rem;
       }
@@ -230,10 +256,6 @@ main {
         flex-direction: column;
         justify-content: center;
         padding-left: 5rem;
-
-        button {
-          filter: saturate(1.5);
-        }
       }
     }
   }

@@ -1,6 +1,10 @@
 <script>
+import ButtonItem from "../utilities/ButtonItem.vue";
 export default {
   name: "BookSection",
+  components: {
+    ButtonItem,
+  },
 };
 </script>
 
@@ -47,9 +51,7 @@ export default {
             <input type="text" placeholder="Telephone" />
             <input type="text" placeholder="Location" />
             <div class="request">
-              <button class="btn rounded-pill text-uppercase">
-                Request a callback
-              </button>
+              <ButtonItem> request a callback </ButtonItem>
             </div>
           </div>
         </div>
