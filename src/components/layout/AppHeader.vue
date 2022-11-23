@@ -9,8 +9,6 @@ export default {
 };
 </script>
 
-<!-- TODO: POPOLA DINAMICAMENTE LA LISTA DEI LINK -->
-
 <template>
   <header>
     <div class="header_top">

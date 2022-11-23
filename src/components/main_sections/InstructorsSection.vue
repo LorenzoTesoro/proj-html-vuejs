@@ -1,9 +1,15 @@
 <script>
 import CardItem from "../utilities/CardItem.vue";
 import ButtonItem from "../utilities/ButtonItem.vue";
+import socialIcons from "../../assets/data/social_icons.js";
 
 export default {
   name: "InstructorsSection",
+  data() {
+    return {
+      socialIcons,
+    };
+  },
   components: {
     CardItem,
     ButtonItem,
@@ -41,7 +47,11 @@ export default {
             />
             <div class="card-body">
               <h5>Mike Hart</h5>
-              <div>icon</div>
+              <ul class="d-flex">
+                <li v-for="icon in socialIcons">
+                  <font-awesome-icon :icon="`${icon.icon}`" />
+                </li>
+              </ul>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit.
               </p>

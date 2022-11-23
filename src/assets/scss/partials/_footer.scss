@@ -1,0 +1,91 @@
+@use "./variables.scss" as *;
+
+footer {
+  .footer_top {
+    background-image: url("/images/footer-background-color.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0 4rem 0;
+
+    .contacts {
+      ul {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          svg {
+            font-size: $fs_md;
+            color: $bg_transparent;
+          }
+        }
+      }
+    }
+    .courses {
+      ul {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        li {
+          display: flex;
+          align-items: center;
+          a {
+            font-size: $fs-md;
+          }
+          svg {
+            font-size: $fs-md;
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    p,
+    span {
+      color: $dark_hash;
+      filter: brightness(200%);
+      line-height: 1.8;
+      font-size: $fs_sm;
+    }
+    h6 {
+      color: $lighter;
+    }
+
+    .bi-telephone-fill {
+      transform: rotate(270deg);
+    }
+    a {
+      color: $primary;
+      font-size: $fs_sm;
+    }
+  }
+  .footer_bottom {
+    background-color: $darker;
+    color: $dark_hash;
+    padding: 4rem 0 4rem 0;
+    .col:first-of-type {
+      font-size: $fs-sm;
+      span {
+        color: $primary;
+      }
+    }
+    .social_icons {
+      font-size: $fs_md;
+      color: $bg_transparent;
+
+      ul {
+        display: flex;
+        justify-content: end;
+        li {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}
