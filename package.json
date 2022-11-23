@@ -15,7 +15,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "bootstrap-icons": "^1.10.2",
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "vue3-circle-progress": "^1.0.7"
   },
   "devDependencies": {
     "@popperjs/core": "^2.11.6",

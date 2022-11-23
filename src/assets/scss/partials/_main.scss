@@ -156,21 +156,31 @@ main {
     .card {
       border-top: 3px solid $primary;
       align-items: center;
+      box-shadow: 0px 15px 18px 7px rgba(63, 72, 67, 0.37);
 
       .circle {
-        border-radius: 100%;
-        width: 150px;
-        aspect-ratio: 1;
-        border: 5px solid $primary;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        padding-bottom: 0.2rem;
+        font-size: 2.5rem;
+        position: relative;
+        padding-bottom: 2rem;
       }
-
+      .percentage.high {
+        position: absolute;
+        right: 30px;
+        bottom: 92px;
+      }
+      .percentage.max {
+        position: absolute;
+        right: 22px;
+        bottom: 92px;
+      }
+      .percentage.min {
+        position: absolute;
+        right: 40px;
+        bottom: 92px;
+      }
       h6,
-      .number {
+      span.current-counter,
+      span.percentage {
         color: $dark_hash;
         filter: brightness(200%);
       }
